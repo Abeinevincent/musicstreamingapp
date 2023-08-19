@@ -1,0 +1,25 @@
+
+.single_artist_wrapper {
+    display: flex;
+    width: 30%;
+    height: 200px;
+    flex-direction: column;
+    box-shadow: 1px 2px 5px -1px rgba(0, 0, 0, 0.32);
+    -webkit-box-shadow: 1px 2px 5px -1px rgba(0, 0, 0, 0.32);
+    -moz-box-shadow: 1px 2px 5px -1px rgba(0, 0, 0, 0.32);
+  }
+  
+  .single_artist_content {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 5px;
+  }
+  
+  .track_content p {
+    overflow: hidden;
+  }
+  
+  .track_content h3 {
+    overflow: hidden;
+  }

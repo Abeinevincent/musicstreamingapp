@@ -1,0 +1,23 @@
+.searchinput_wrapper {
+  display: flex;
+  padding: 9px 15px;
+  background-color: white;
+  width: 60%;
+  border-radius: 50px;
+}
+
+.search_icon_wrapper{
+    cursor: pointer;
+    color: gray;
+}
+
+.search_icon_wrapper:hover{
+    opacity: 0.5;
+}
+
+.search_input {
+  border: none;
+  width: 100%;
+  padding-left: 12px;
+  outline: none;
+}

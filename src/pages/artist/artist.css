@@ -1,0 +1,98 @@
+.artist_wrapper {
+  display: flex;
+  margin: auto;
+  box-shadow: 1px 2px 5px -1px rgba(0, 0, 0, 0.32);
+  -webkit-box-shadow: 1px 2px 5px -1px rgba(0, 0, 0, 0.32);
+  -moz-box-shadow: 1px 2px 5px -1px rgba(0, 0, 0, 0.32);
+  width: 70%;
+  height: max-content !important;
+  flex-direction: column;
+  margin-top: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.airtist_upper_image_wrapper {
+  background: url("https://e-cdn-images.dzcdn.net/images/artist/20ec6e1c312606f09ef223e5c8f0b959/264x264-000000-80-0-0.jpg")
+    no-repeat;
+  width: 65%;
+  height: 100%;
+  background-size: cover;
+  display: flex;
+  padding: 25px;
+  gap: 15px;
+  flex-direction: column;
+}
+
+.artist_wrapper .artist_upper {
+  display: flex;
+  height: 250px;
+  border-bottom: 2px solid #eee;
+  overflow: hidden;
+}
+
+.artist_upper_content {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  height: 100%;
+  overflow: hidden;
+}
+
+.artist_upper_content .upper-content_text {
+  border-bottom: 1px solid #eee;
+  padding: 8px;
+  font-size: 13px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.artist_wrapper .artist_lower {
+  display: flex;
+  height: 50%;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.albums_list {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.artist_lower h3 {
+  overflow: hidden;
+}
+
+.artist_lower p {
+  overflow: hidden;
+}
+
+/*  RESPONSIVE DESIGN  */
+@media screen and (max-width: 768px) {
+  .artist_wrapper {
+    width: 90%;
+    height: 350px;
+  }
+
+  .airtist_upper_image_wrapper {
+    width: 100%;
+    height: auto;
+  }
+
+  .artist_upper {
+    flex-direction: column;
+  }
+
+  .artist_upper_content {
+    width: 100%;
+    height: auto;
+  }
+
+  .albums_list {
+    flex-direction: column;
+  }
+
+  .single_artist_wrapper {
+    width: 100%;
+  }
+}

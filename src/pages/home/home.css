@@ -1,0 +1,109 @@
+.home_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+}
+
+.home_wrapper h2 {
+  color: white;
+}
+.search_wrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px;
+  gap: 20px;
+}
+
+.search_wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("https://img.freepik.com/free-vector/musical-notes-frame-with-text-space_1017-32857.jpg?size=626&ext=jpg&ga=GA1.2.1304378105.1690012069&semt=country_rows_v1");
+  opacity: 0.6; /* Adjust the opacity as needed */
+  z-index: -1; /* Place the pseudo-element behind the content */
+}
+
+.track_list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 15px;
+}
+
+.single_track {
+  display: flex;
+  width: 30%;
+  height: 350px;
+  flex-direction: column;
+  box-shadow: 1px 2px 5px -1px rgba(0, 0, 0, 0.32);
+  -webkit-box-shadow: 1px 2px 5px -1px rgba(0, 0, 0, 0.32);
+  -moz-box-shadow: 1px 2px 5px -1px rgba(0, 0, 0, 0.32);
+  cursor: pointer;
+}
+
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.search_fav_tracks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.track_content {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 5px;
+}
+
+.track_content p {
+  overflow: hidden;
+}
+
+.track_content h3 {
+  overflow: hidden;
+}
+
+.no_track_found {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: gray;
+  font-size: 25px;
+  margin-top: 25px;
+}
+
+/* RESPONSIVE STYLES  */
+@media screen and (max-width: 768px) {
+  .track_list {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .single_track {
+    width: 90%;
+  }
+
+  .searchinput_wrapper {
+    width: 85%;
+  }
+}
